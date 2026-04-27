@@ -1,6 +1,6 @@
 <?php
 
-namespace Samdoit\CCAvenue;
+namespace bhaskarvyas001\CCAvenue;
 use Illuminate\Support\ServiceProvider;
 
 class CCAvenueServiceProvider extends ServiceProvider

@@ -1,17 +1,16 @@
 <?php 
 
-namespace Samdoit\CCAvenue;
+namespace bhaskarvyas001\CCAvenue;
 
-use Samdoit\CCAvenue\Utils;
+use bhaskarvyas001\CCAvenue\Utils;
 
 /**
  * CCAvenue Laravel Wrapper Class
  *
  * This class is used to interface with Laravel and CCAvenue
  *
- * @package    Samdoit\CCAvenue
+ * @package    bhaskarvyas001\CCAvenue
  * @subpackage API
- * @author     Samdoit Infotech <info@samdoit.com>
  */
 class CCAvenuePayment
 {
