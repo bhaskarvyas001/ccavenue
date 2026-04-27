@@ -1,5 +1,5 @@
 {
-    "name": "samdoit/ccavenue",
+    "name": "bhaskarvyas001/ccavenue",
     "description": "CCAvenue Payment Gateway PHP Library",
     "version": "0.1.0",
     "license": "MIT",
@@ -20,7 +20,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Samdoit\\CCAvenue\\": "src"
+            "bhaskarvyas001\\CCAvenue\\": "src"
         }
     }
 }
