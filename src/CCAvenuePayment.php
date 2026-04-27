@@ -18,8 +18,10 @@ class CCAvenuePayment
     private $merchant_id;
     private $access_code;
     private $amount;
+    private $currency;
     private $order_id;
     private $url;
+    private $cancel_url;
     private $billing_name;
     private $billing_address;
     private $billing_country;
@@ -69,6 +71,16 @@ class CCAvenuePayment
         return $this->amount;
     }
 
+    public function setCurrency( $currency )
+    {
+        $this->currency = $currency;
+    }
+
+    public function getCurrency()
+    {
+        return $this->currency;
+    }
+
     public function setOrderId( $order_id )
     {
         $this->order_id = $order_id;
@@ -87,6 +99,16 @@ class CCAvenuePayment
     public function getRedirectUrl()
     {
         return $this->url;
+    }
+
+    public function setCancelUrl( $cancel_url )
+    {
+        $this->cancel_url = $cancel_url;
+    }
+
+    public function getCancelUrl()
+    {
+        return $this->cancel_url;
     }
 
     public function setBillingName( $billing_name )
@@ -264,8 +286,10 @@ class CCAvenuePayment
     {
         $merchant_data= 'merchant_id='.urlencode($this->getMerchantId());
         $merchant_data .= '&amount='.urlencode($this->getAmount());
+        $merchant_data .= '&currency='.urlencode($this->getCurrency());
         $merchant_data .= '&order_id='.urlencode($this->getOrderId());
         $merchant_data .= '&redirect_url='.urlencode($this->getRedirectUrl());
+        $merchant_data .= '&cancel_url='.urlencode($this->getCancelUrl());
         $merchant_data .= '&billing_cust_name='.urlencode($this->getBillingName());
         $merchant_data .= '&billing_cust_address='.urlencode($this->getBillingAddress());
         $merchant_data .= '&billing_cust_country='.urlencode($this->getBillingCountry());
