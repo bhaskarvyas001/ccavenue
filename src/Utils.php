@@ -1,6 +1,6 @@
 <?php
 
-namespace bhaskarvyas001\CCAvenue;
+namespace Bhaskarvyas001\CCAvenue;
 
 class Utils
 {

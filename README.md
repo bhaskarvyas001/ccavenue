@@ -14,7 +14,7 @@ Require this package in your composer.json and update composer. This will downlo
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
 
-    bhaskarvyas001\CCAvenue\CCAvenueServiceProvider::class,
+    Bhaskarvyas001\CCAvenue\CCAvenueServiceProvider::class,
     
 packege auto discovery available for laravel version 7.3 or later
 
@@ -25,7 +25,7 @@ After adding ServiceProvider, Run the command
 #### Request Payment
 
 	require_once __DIR__ . '/../vendor/autoload.php'; 
-	use bhaskarvyas001\CCAvenue\CCAvenuePayment;
+	use Bhaskarvyas001\CCAvenue\CCAvenuePayment;
 
 	$ccavenue = new CCAvenuePayment();
 
@@ -68,7 +68,7 @@ After adding ServiceProvider, Run the command
 #### Payment Response
 
 	require_once __DIR__ . '/../vendor/autoload.php'; 
-	use bhaskarvyas001\CCAvenue\CCAvenuePayment;
+	use Bhaskarvyas001\CCAvenue\CCAvenuePayment;
 
 	// Get Response
 	$response = $_GET_["encResp"];

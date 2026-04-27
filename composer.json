@@ -19,7 +19,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "bhaskarvyas001\\CCAvenue\\": "src"
+            "Bhaskarvyas001\\CCAvenue\\": "src"
         }
     }
 }

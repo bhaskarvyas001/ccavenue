@@ -1,15 +1,15 @@
 <?php 
 
-namespace bhaskarvyas001\CCAvenue;
+namespace Bhaskarvyas001\CCAvenue;
 
-use bhaskarvyas001\CCAvenue\Utils;
+use Bhaskarvyas001\CCAvenue\Utils;
 
 /**
  * CCAvenue Laravel Wrapper Class
  *
  * This class is used to interface with Laravel and CCAvenue
  *
- * @package    bhaskarvyas001\CCAvenue
+ * @package    Bhaskarvyas001\CCAvenue
  * @subpackage API
  */
 class CCAvenuePayment
